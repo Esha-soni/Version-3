@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | PsyConnect</title>
+
+     <link rel="stylesheet"
+    href="../CSS/login/signup.css">
+
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+       <nav class="navbar">
+
+    <div class="logo">
+        <h2>PsyConnect</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+       
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+        <a href="#" class="login-btn active-btn">Sign up</a>
+    </div>
+
+</nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <section class="login-section">
+
+            <!-- Logo -->
+            <div class="page-logo">
+                <img src="images/logo.png" alt="PsyConnect Logo">
+            </div>
+
+            <!-- Heading -->
+            <div class="page-heading">
+                <h1>Welcome Back!</h1>
+                <p>
+                    Continue your journey toward better mental wellness.
+                </p>
+            </div>
+
+            <!-- Success / Error Message Area -->
+            <div class="message-box">
+                <!-- JavaScript messages will appear here -->
+            </div>
+
+            <!-- Login Card -->
+            <div class="login-card">
+
+                <form action="#" method="post">
+
+                    <!-- Email -->
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group">
+                        <label for="password">Password</label>
+
+                        <div class="password-field">
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                            <button type="button" class="toggle-password">
+                                👁
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Remember + Forgot -->
+                    <div class="options">
+
+                        <label>
+                            <input type="checkbox">
+                            Remember Me
+                        </label>
+
+                        <a href="#">Forgot Password?</a>
+
+                    </div>
+
+                    <!-- Login Button -->
+                    <button type="submit" class="login-btn">
+                        Login
+                    </button>
+
+                </form>
+
+                <hr>
+
+                <!-- Sign Up Link -->
+                <div class="signup-link">
+                    <p>
+                        Don't have an account?
+                        <a href="signup.html">Create Account</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Reassurance Message -->
+            <div class="security-note">
+
+                <p>
+                    🔒 <strong>Your privacy comes first.</strong>
+                    All personal information is securely encrypted, and your mental
+                    health records remain confidential. Only you decide what
+                    information is shared with your psychologist.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= LOADING SCREEN ================= -->
+    <!-- Hidden by default. Display with JavaScript after login. -->
+
+    <div class="loading-screen">
+
+        <div class="loading-content">
+
+            <img src="images/logo.png" alt="PsyConnect Logo">
+
+            <h2>Authenticating...</h2>
+
+            <p>
+                Please wait while we securely verify your account and
+                prepare your personalized experience.
+            </p>
+
+            <div class="loading-animation">
+                <!-- CSS animation goes here -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            © 2026 PsyConnect. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
