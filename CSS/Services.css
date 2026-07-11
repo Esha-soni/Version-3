@@ -1,0 +1,1857 @@
+/*=====================================================
+                PSYCONNECT NAVBAR
+======================================================*/
+
+
+header{
+
+    width:100%;
+
+    position:relative;
+
+    z-index:1000;
+
+}
+
+
+
+/* Glass Navbar */
+
+.glass-navbar{
+
+    width:100%;
+
+    min-height:85px;
+
+    padding:0 8%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:
+
+    rgba(255,255,255,.16);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+}
+
+
+
+.logo i{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:15px;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5BC0EB,
+    #2FB8AC
+    );
+
+    box-shadow:
+
+    0 10px 25px rgba(47,184,172,.35);
+
+}
+
+
+
+/* Navigation Links */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+
+
+.nav-links a{
+
+    color:
+
+    rgba(255,255,255,.9);
+
+    text-decoration:none;
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s ease;
+
+}
+
+
+
+/* Active + Hover underline */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:#FFD166;
+
+    transition:.3s ease;
+
+}
+
+
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+
+
+.nav-links a:hover,
+.nav-links a.active{
+
+    color:#FFD166;
+
+}
+
+
+
+/* Buttons */
+
+.nav-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.btn-primary,
+.btn-outline{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:13px 28px;
+
+    border-radius:50px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+
+
+/* Gradient CTA */
+
+.btn-primary{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5BC0EB,
+    #2FB8AC
+    );
+
+    color:white;
+
+    border:none;
+
+    box-shadow:
+
+    0 12px 25px rgba(47,184,172,.3);
+
+}
+
+
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 18px 35px rgba(47,184,172,.45);
+
+}
+
+
+
+/* Glass Login Button */
+
+.btn-outline{
+
+    background:
+
+    rgba(255,255,255,.15);
+
+    color:white;
+
+    border:
+
+    1px solid rgba(255,255,255,.35);
+
+}
+
+
+
+.btn-outline:hover{
+
+    background:
+
+    rgba(255,255,255,.3);
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/*==============================
+            Responsive
+==============================*/
+
+
+@media(max-width:1100px){
+
+    .glass-navbar{
+
+        padding:0 5%;
+
+    }
+
+
+    .nav-links{
+
+        gap:18px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:850px){
+
+
+    .glass-navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:25px 5%;
+
+    }
+
+
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+
+    .nav-buttons{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .logo{
+
+        font-size:1.4rem;
+
+    }
+
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+
+    .nav-buttons{
+
+        gap:10px;
+
+    }
+
+
+    .btn-primary,
+    .btn-outline{
+
+        padding:12px 18px;
+
+        flex:1;
+
+    }
+
+
+}
+
+
+/*==============================
+            Hero Section
+==============================*/
+
+
+.services-hero{
+
+    width:100%;
+
+    padding:130px 8% 80px;
+
+    text-align:center;
+
+    position:relative;
+    background-color: #e9eef0;
+    z-index:2;
+
+}
+
+
+
+.services-hero .hero-content{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+
+
+.services-hero h1{
+
+    color:rgb(18, 64, 102);
+
+    font-size:3.4rem;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.services-hero p{
+
+    color:rgba(15, 68, 88, 0.9);
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+    max-width:720px;
+
+    margin:0 auto 35px;
+
+}
+
+
+
+/* Hero Buttons */
+
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+    
+}
+
+
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-outline{
+
+    padding:14px 30px;
+    color: #1F2937;
+}
+
+
+
+
+
+/*==============================
+        Services Section
+==============================*/
+
+
+.services-section{
+
+    width:100%;
+
+    padding:0 8% 90px;
+    
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+
+/* Section Header */
+
+
+.section-header{
+
+    max-width:750px;
+
+    margin:0 auto 45px;
+
+    text-align:center;
+
+}
+
+
+
+.section-header h2{
+
+    color:white;
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.section-header p{
+
+    color:rgba(255,255,255,.9);
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/*==============================
+            Services Grid
+==============================*/
+
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+
+/* Service Card */
+
+
+.service-card{
+
+    padding:35px;
+
+    transition:.4s ease;
+    background-color: #e9eef0;
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    right:-50px;
+
+    top:-50px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.15);
+
+    transition:.5s;
+
+}
+
+
+
+.service-card:hover::before{
+
+    transform:scale(1.5);
+
+}
+
+
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 25px 50px rgba(0,0,0,.18);
+
+}
+
+
+
+
+
+/*==============================
+            Service Icon
+==============================*/
+
+
+.service-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:20px;
+
+    margin-bottom:22px;
+
+    color:white;
+
+    font-size:1.7rem;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5BC0EB,
+    #2FB8AC
+    );
+
+    box-shadow:
+
+    0 15px 30px rgba(47,184,172,.25);
+
+}
+
+
+
+
+
+
+/* Different icon colors */
+
+
+.service-card:nth-child(2)
+.service-icon{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2FB8AC,
+    #A8E6CF
+    );
+
+}
+
+
+
+.service-card:nth-child(3)
+.service-icon{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #667eea,
+    #5BC0EB
+    );
+
+}
+
+
+
+.service-card:nth-child(4)
+.service-icon{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #FF6B6B,
+    #FF9F7F
+    );
+
+}
+
+
+
+.service-card:nth-child(5)
+.service-icon{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #FFD166,
+    #FF9F7F
+    );
+
+}
+
+
+
+.service-card:nth-child(6)
+.service-icon{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #A8E6CF,
+    #2FB8AC
+    );
+
+}
+
+
+
+
+
+
+
+/*==============================
+        Service Content
+==============================*/
+
+
+.service-card h3{
+
+    color:#1F2937;
+
+    font-size:1.35rem;
+
+    margin-bottom:14px;
+
+}
+
+
+
+.service-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:22px;
+
+    font-size:.95rem;
+
+}
+
+
+
+
+/* Link */
+
+
+.service-card .resource-link{
+
+    color:#2FB8AC;
+
+}
+
+
+
+
+
+
+/*==============================
+            Responsive
+==============================*/
+
+
+@media(max-width:1100px){
+
+
+    .services-grid{
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .services-hero{
+
+        padding-top:110px;
+
+    }
+
+
+    .services-hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .hero-buttons a{
+
+        width:100%;
+
+    }
+
+
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .section-header h2{
+
+        font-size:2rem;
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .services-section{
+
+        padding-left:5%;
+
+        padding-right:5%;
+
+    }
+
+
+    .service-card{
+
+        padding:25px;
+
+    }
+
+
+}
+/*=====================================================
+            HOW IT WORKS SECTION
+======================================================*/
+
+
+.process-section{
+
+    width:100%;
+
+    padding:20px 8% 90px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+.process-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.process-card{
+
+    width:320px;
+
+    padding:35px 30px;
+
+    text-align:center;
+    background-color: #e9eef0;
+    position:relative;
+
+    transition:.4s ease;
+
+}
+
+
+
+.process-card:hover{
+
+    transform:translateY(-10px);
+        
+    box-shadow:
+
+    0 25px 45px rgba(0,0,0,.18);
+
+}
+
+
+
+/* Step Number */
+
+
+.step-number{
+
+    position:absolute;
+
+    top:-18px;
+
+    right:25px;
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #FFD166,
+    #FF9F7F
+    );
+
+    color:white;
+
+    font-weight:700;
+
+    box-shadow:
+
+    0 10px 20px rgba(255,159,127,.35);
+
+}
+
+
+
+/* Process Icon */
+
+
+.process-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:10px auto 22px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5BC0EB,
+    #2FB8AC
+    );
+
+    color:white;
+
+    font-size:1.8rem;
+
+}
+
+
+
+.process-card h3{
+
+    color:#1F2937;
+
+    font-size:1.3rem;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.process-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
+
+
+
+/* Timeline Line */
+
+
+.process-line{
+
+    width:80px;
+
+    height:3px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #5BC0EB,
+    #2FB8AC
+    );
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+
+
+/*=====================================================
+            WHY CHOOSE SECTION
+======================================================*/
+
+
+.why-section{
+
+    width:100%;
+
+    padding:0 8% 90px;
+
+}
+
+
+
+.why-card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:50px;
+
+    padding:50px;
+
+}
+
+
+
+.why-content{
+
+    flex:1;
+
+}
+
+
+
+.why-content h2{
+
+    color:#1F2937;
+
+    font-size:2.2rem;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.why-content > p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+    max-width:650px;
+
+}
+
+
+
+/* Feature Grid */
+
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+.feature-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+}
+
+
+
+.feature-item > i{
+
+    min-width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5BC0EB,
+    #2FB8AC
+    );
+
+    color:white;
+
+    font-size:1.2rem;
+
+}
+
+
+
+.feature-item h4{
+
+    color:#1F2937;
+
+    margin-bottom:6px;
+
+    font-size:1rem;
+
+}
+
+
+
+.feature-item p{
+
+    color:#666;
+
+    line-height:1.6;
+
+    font-size:.9rem;
+
+}
+
+
+
+
+
+/* Why Section Icon */
+
+
+.why-image{
+
+    width:220px;
+
+    height:220px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5BC0EB,
+    #2FB8AC
+    );
+
+    color:white;
+
+    font-size:5rem;
+
+    box-shadow:
+
+    0 25px 50px rgba(47,184,172,.3);
+
+}
+
+
+
+
+
+
+
+/*=====================================================
+            RESPONSIVE
+======================================================*/
+
+
+@media(max-width:1100px){
+
+
+    .process-container{
+
+        flex-wrap:wrap;
+
+    }
+
+
+
+    .process-line{
+
+        display:none;
+
+    }
+
+
+
+    .process-card{
+
+        width:45%;
+
+    }
+
+
+
+    .why-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+
+    .why-content > p{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .process-card{
+
+        width:100%;
+
+    }
+
+
+
+    .features-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .why-card{
+
+        padding:35px 25px;
+
+    }
+
+
+
+    .why-content h2{
+
+        font-size:1.8rem;
+
+    }
+
+
+
+    .why-image{
+
+        width:160px;
+
+        height:160px;
+
+        font-size:3.5rem;
+
+    }
+
+
+}
+/*=====================================================
+            THERAPY CATEGORIES SECTION
+======================================================*/
+
+
+.therapy-section{
+
+    width:100%;
+
+    padding:0 8% 90px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+.therapy-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+.therapy-card{
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    transition:.4s ease;
+
+}
+
+
+
+.therapy-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.therapy-card > i{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 20px;
+
+    border-radius:18px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #FF9F7F,
+    #FFD166
+    );
+
+    color:white;
+
+    font-size:1.7rem;
+
+    box-shadow:
+
+    0 15px 30px rgba(255,159,127,.3);
+
+}
+
+
+
+.therapy-card h3{
+
+    color:#1F2937;
+
+    font-size:1.2rem;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.therapy-card p{
+
+    color:#555;
+
+    font-size:.92rem;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/*=====================================================
+                CTA SECTION
+======================================================*/
+
+
+.services-cta{
+
+    width:100%;
+
+    padding:0 8% 90px;
+
+}
+
+
+
+.cta-card{
+
+    padding:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+
+.cta-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    right:-80px;
+
+    bottom:-80px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,209,102,.25);
+
+}
+
+
+
+.cta-content{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+
+
+.cta-content h2{
+
+    color:#1F2937;
+
+    font-size:2.3rem;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.cta-content p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    max-width:600px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.cta-icon{
+
+    width:170px;
+
+    height:170px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5BC0EB,
+    #2FB8AC
+    );
+
+    color:white;
+
+    font-size:4rem;
+
+    box-shadow:
+
+    0 25px 45px rgba(47,184,172,.35);
+
+}
+
+
+
+
+
+
+
+/*=====================================================
+            SERVICES FOOTER
+======================================================*/
+
+
+.footer{
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+.footer-logo h2{
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+.footer-logo h2 i{
+
+    color:#FFD166;
+
+}
+
+
+
+.footer-links h4,
+.footer-social h4{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.footer-social{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+
+
+.footer-social a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    color:white;
+
+    background:
+
+    rgba(255,255,255,.15);
+
+    transition:.3s ease;
+
+}
+
+
+
+.footer-social a:hover{
+
+    background:#2FB8AC;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+
+
+/*=====================================================
+            FINAL RESPONSIVE
+======================================================*/
+
+
+@media(max-width:1100px){
+
+
+    .therapy-grid{
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+
+    .cta-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+
+    .cta-content p{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+    .therapy-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .cta-card{
+
+        padding:35px 25px;
+
+    }
+
+
+
+    .cta-content h2{
+
+        font-size:1.8rem;
+
+    }
+
+
+
+    .cta-icon{
+
+        width:130px;
+
+        height:130px;
+
+        font-size:3rem;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+@media(max-width:480px){
+
+
+    .therapy-section,
+    .services-cta{
+
+        padding-left:5%;
+
+        padding-right:5%;
+
+    }
+
+
+
+    .cta-content h2{
+
+        font-size:1.6rem;
+
+    }
+
+
+}
