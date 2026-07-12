@@ -1,0 +1,561 @@
+/* =========================================================
+   PATIENT REGISTRATION PAGE
+   PsyConnect
+========================================================= */
+
+
+/* ==========================
+   PAGE BACKGROUND
+========================== */
+
+.registration-page {
+
+    min-height:100vh;
+
+    padding-top:110px;
+
+    background:
+    linear-gradient(
+        120deg,
+        #5BC0EB 0%,
+        #2FB8AC 35%,
+        #A8E6CF 60%,
+        #FFD166 85%,
+        #FF9F7F 100%
+    );
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+/* ==========================
+   FLOATING ORBS
+========================== */
+
+.orb{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(1px);
+
+    opacity:.35;
+
+    z-index:0;
+
+}
+
+
+.orb1{
+
+    width:220px;
+    height:220px;
+
+    background:#ffffff;
+
+    top:120px;
+    left:-70px;
+
+}
+
+
+.orb2{
+
+    width:280px;
+    height:280px;
+
+    background:#FFD166;
+
+    right:-100px;
+    top:300px;
+
+}
+
+
+.orb3{
+
+    width:180px;
+    height:180px;
+
+    background:#5BC0EB;
+
+    bottom:100px;
+    left:40%;
+
+}
+
+
+
+/* ==========================
+   PAGE HEADER
+========================== */
+
+
+.registration-header{
+
+    text-align:center;
+
+    color:white;
+
+    position:relative;
+
+    z-index:2;
+
+    margin-bottom:35px;
+
+}
+
+
+.registration-header h1{
+
+    font-size:2.5rem;
+
+    margin-bottom:12px;
+
+}
+
+
+.registration-header p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:rgba(255,255,255,.9);
+
+}
+
+
+
+/* ==========================
+   GLASS FORM CARD
+========================== */
+
+
+.registration-form{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:950px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:28px;
+
+
+    background:
+    rgba(255,255,255,.18);
+
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+
+    border:1px solid rgba(255,255,255,.3);
+
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.15);
+
+}
+
+
+
+/* ==========================
+   SECTION HEADINGS
+========================== */
+
+
+.registration-form h2{
+
+    color:white;
+
+    font-size:1.35rem;
+
+    margin:35px 0 20px;
+
+    padding-bottom:10px;
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,.35);
+
+}
+
+
+.registration-form h2:first-child{
+
+    margin-top:0;
+
+}
+
+
+
+/* ==========================
+   FORM GRID
+========================== */
+
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+
+/* ==========================
+   INPUT GROUP
+========================== */
+
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+
+
+.form-group label{
+
+    color:white;
+
+    font-size:.9rem;
+
+    font-weight:500;
+
+}
+
+
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+
+    width:100%;
+
+
+    padding:13px 15px;
+
+
+    border-radius:12px;
+
+
+    border:none;
+
+
+    outline:none;
+
+
+    background:
+
+    rgba(255,255,255,.85);
+
+
+    color:#253238;
+
+
+    font-family:inherit;
+
+
+    transition:.3s;
+
+}
+
+
+
+.form-group textarea{
+
+    resize:none;
+
+}
+
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+
+    box-shadow:
+
+    0 0 0 3px rgba(255,209,102,.45);
+
+
+}
+
+
+
+/* ==========================
+   SYMPTOMS CHECKBOX GRID
+========================== */
+
+
+.checkbox-grid{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+
+
+.checkbox-grid label{
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    padding:12px;
+
+
+    border-radius:12px;
+
+
+    color:white;
+
+
+    cursor:pointer;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.checkbox-grid label:hover{
+
+
+    background:
+
+    rgba(255,255,255,.28);
+
+
+    transform:translateY(-3px);
+
+}
+
+
+
+.checkbox-grid input{
+
+    margin-right:8px;
+
+}
+
+
+
+/* ==========================
+   TERMS
+========================== */
+
+
+.terms{
+
+
+    margin:30px 0;
+
+
+    color:white;
+
+
+    font-size:.9rem;
+
+
+}
+
+
+.terms input{
+
+    margin-right:8px;
+
+}
+
+
+
+/* ==========================
+   BUTTON
+========================== */
+
+
+.gradient-btn{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border:none;
+
+
+    border-radius:14px;
+
+
+    cursor:pointer;
+
+
+    font-size:1rem;
+
+
+    font-weight:600;
+
+
+    color:#253238;
+
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #FFD166,
+
+        #FF9F7F
+
+    );
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.gradient-btn:hover{
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 12px 30px rgba(255,209,102,.35);
+
+
+}
+
+
+
+
+/* ==========================
+   NAVBAR OVERRIDE FOR INNER PAGES
+========================== */
+
+
+.navbar{
+
+
+    background:
+
+    rgba(255,255,255,.75);
+
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+
+@media(max-width:900px){
+
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .checkbox-grid{
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+    .registration-form{
+
+        margin:20px;
+
+        padding:25px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .registration-header h1{
+
+        font-size:2rem;
+
+    }
+
+
+    .checkbox-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .registration-form{
+
+        border-radius:20px;
+
+    }
+
+
+}

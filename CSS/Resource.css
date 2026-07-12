@@ -137,8 +137,6 @@ header{
 
 }
 
-
-
 .nav-links a{
 
     text-decoration:none;
@@ -154,12 +152,7 @@ header{
     transition:.3s ease;
 
 }
-
-
-
 /* Animated underline */
-
-
 .nav-links a::after{
 
     content:"";
@@ -181,18 +174,10 @@ header{
     transition:.3s ease;
 
 }
-
-
-
 .nav-links a:hover::after,
 .nav-links a.active::after{
-
     width:100%;
-
 }
-
-
-
 .nav-links a:hover,
 .nav-links a.active{
 
@@ -200,13 +185,9 @@ header{
 
 }
 
-
-
 /*==============================
             Buttons
 ==============================*/
-
-
 .nav-buttons{
 
     display:flex;
@@ -216,9 +197,6 @@ header{
     gap:15px;
 
 }
-
-
-
 .btn-primary,
 .btn-outline{
 
@@ -246,13 +224,7 @@ header{
 
     transition:.35s ease;
 
-}
-
-
-
-/* Gradient Button */
-
-
+}/* Gradient Button */
 .btn-primary{
 
     color:white;
@@ -272,9 +244,6 @@ header{
     0 12px 25px rgba(47,184,172,.3);
 
 }
-
-
-
 .btn-primary:hover{
 
     transform:translateY(-4px);
@@ -284,12 +253,7 @@ header{
     0 18px 35px rgba(47,184,172,.4);
 
 }
-
-
-
 /* Glass Outline Button */
-
-
 .btn-outline{
 
     color:white;
@@ -303,9 +267,6 @@ header{
     1px solid rgba(255,255,255,.35);
 
 }
-
-
-
 .btn-outline:hover{
 
     background:
@@ -315,14 +276,9 @@ header{
     transform:translateY(-3px);
 
 }
-
-
-
 /*==============================
         Mobile Navbar
 ==============================*/
-
-
 @media(max-width:1100px){
 
 
@@ -331,26 +287,17 @@ header{
         gap:18px;
 
     }
-
-
     .nav-links a{
 
         font-size:.88rem;
 
     }
-
-
     .glass-navbar{
 
         padding:0 5%;
 
     }
-
-
 }
-
-
-
 @media(max-width:850px){
 
 
@@ -382,9 +329,6 @@ header{
 
 
 }
-
-
-
 @media(max-width:480px){
 
 
