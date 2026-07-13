@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsyConnect | Psychologist Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/PsycologistDashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= Decorative Orbs ================= -->
+
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <div class="dashboard">
+
+        <!-- ========================================================= -->
+        <!-- SIDEBAR -->
+        <!-- ========================================================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>PsyConnect</h2>
+                <span>Psychologist Portal</span>
+            </div>
+
+            <nav>
+
+                <a href="#dashboard" class="nav-link active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+
+                <a href="#appointments" class="nav-link">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Appointments
+                </a>
+
+                <a href="#patients" class="nav-link">
+                    <i class="fa-solid fa-user-group"></i>
+                    Patients
+                </a>
+
+                <a href="#messages" class="nav-link">
+                    <i class="fa-solid fa-comments"></i>
+                    Messages
+                </a>
+
+                <a href="#analytics" class="nav-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Analytics
+                </a>
+
+                <a href="#reports" class="nav-link">
+                    <i class="fa-solid fa-folder-open"></i>
+                    Reports
+                </a>
+
+                <a href="#verification" class="nav-link">
+                    <i class="fa-solid fa-certificate"></i>
+                    Verification
+                </a>
+
+                <a href="#earnings" class="nav-link">
+                    <i class="fa-solid fa-wallet"></i>
+                    Earnings
+                </a>
+
+                <a href="#settings" class="nav-link">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+
+            </nav>
+
+            <div class="doctor-profile">
+
+                <img src="https://i.pravatar.cc/120?img=32"
+                    alt="Doctor">
+
+                <h3>Dr. Sarah Wilson</h3>
+
+                <p>Clinical Psychologist</p>
+
+                <span class="verified">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified
+                </span>
+
+                <button class="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+        <!-- ========================================================= -->
+        <!-- MAIN CONTENT -->
+        <!-- ========================================================= -->
+
+        <main class="content">
+
+            <!-- ========================================================= -->
+            <!-- DASHBOARD -->
+            <!-- ========================================================= -->
+
+            <section id="dashboard">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h1>Good Morning, Dr. Sarah 👋</h1>
+
+                        <p>
+                            You have <strong>8 appointments</strong>
+                            scheduled today.
+                        </p>
+
+                    </div>
+
+                    <button class="primary-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        New Appointment
+
+                    </button>
+
+                </div>
+
+                <!-- ================= Stats ================= -->
+
+                <div class="stats-grid">
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-calendar-day"></i>
+                        </div>
+
+                        <h2>12</h2>
+
+                        <span>Today's Appointments</span>
+
+                        <small>+8% this week</small>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <h2>148</h2>
+
+                        <span>Active Patients</span>
+
+                        <small>18 new this month</small>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </div>
+
+                        <h2>7</h2>
+
+                        <span>Unread Messages</span>
+
+                        <small>Needs attention</small>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+
+                        <h2>₹82,500</h2>
+
+                        <span>Monthly Earnings</span>
+
+                        <small>+12% this month</small>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= Dashboard Grid ================= -->
+
+                <div class="dashboard-grid">
+
+                    <!-- Today's Schedule -->
+
+                    <div class="glass-card">
+
+                        <div class="card-header">
+
+                            <h2>Today's Schedule</h2>
+
+                            <a href="#">View All</a>
+
+                        </div>
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <span>09:00</span>
+                                <div>
+                                    <h4>John Smith</h4>
+                                    <p>Video Consultation</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span>10:30</span>
+                                <div>
+                                    <h4>Emma Davis</h4>
+                                    <p>Anxiety Therapy</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span>12:00</span>
+                                <div>
+                                    <h4>Break</h4>
+                                    <p>Lunch</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span>02:00</span>
+                                <div>
+                                    <h4>Michael Brown</h4>
+                                    <p>Follow-up Session</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span>04:30</span>
+                                <div>
+                                    <h4>Sophia Lee</h4>
+                                    <p>Assessment</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Recent Messages -->
+
+                    <div class="glass-card">
+
+                        <div class="card-header">
+
+                            <h2>Recent Messages</h2>
+
+                            <a href="#">Open Chat</a>
+
+                        </div>
+
+                        <div class="message-preview">
+
+                            <div class="message-item">
+
+                                <img src="https://i.pravatar.cc/50?img=8">
+
+                                <div>
+
+                                    <h4>Emily Watson</h4>
+
+                                    <p>
+                                        Can we reschedule tomorrow's
+                                        session?
+                                    </p>
+
+                                </div>
+
+                                <small>2m</small>
+
+                            </div>
+
+                            <div class="message-item">
+
+                                <img src="https://i.pravatar.cc/50?img=14">
+
+                                <div>
+
+                                    <h4>John Smith</h4>
+
+                                    <p>Thank you for today's session.</p>
+
+                                </div>
+
+                                <small>15m</small>
+
+                            </div>
+
+                            <div class="message-item">
+
+                                <img src="https://i.pravatar.cc/50?img=16">
+
+                                <div>
+
+                                    <h4>Sarah Johnson</h4>
+
+                                    <p>Uploaded the requested report.</p>
+
+                                </div>
+
+                                <small>1h</small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Upcoming Tasks -->
+
+                    <div class="glass-card">
+
+                        <div class="card-header">
+
+                            <h2>Upcoming Tasks</h2>
+
+                        </div>
+
+                        <ul class="task-list">
+
+                            <li>
+                                <input type="checkbox">
+                                Complete two patient reports
+                            </li>
+
+                            <li>
+                                <input type="checkbox">
+                                Review assessment results
+                            </li>
+
+                            <li>
+                                <input type="checkbox">
+                                Reply to 4 unread messages
+                            </li>
+
+                            <li>
+                                <input type="checkbox">
+                                Verify updated license
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Recent Activity -->
+
+                    <div class="glass-card">
+
+                        <div class="card-header">
+
+                            <h2>Recent Activity</h2>
+
+                        </div>
+
+                        <div class="activity-list">
+
+                            <div class="activity">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Session completed with John Smith
+                            </div>
+
+                            <div class="activity">
+                                <i class="fa-solid fa-file-circle-check"></i>
+                                New report uploaded
+                            </div>
+
+                            <div class="activity">
+                                <i class="fa-solid fa-user-plus"></i>
+                                New patient registered
+                            </div>
+
+                            <div class="activity">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                Payment received ₹1500
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+                        <!-- ========================================================= -->
+            <!-- APPOINTMENTS -->
+            <!-- ========================================================= -->
+
+            <section id="appointments">
+
+                <div class="section-header">
+
+                    <div>
+                        <h1>Appointments</h1>
+                        <p>Manage today's schedule and upcoming consultations.</p>
+                    </div>
+
+                    <button class="primary-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Book Appointment
+                    </button>
+
+                </div>
+
+                <!-- Appointment Stats -->
+
+                <div class="stats-grid">
+
+                    <div class="glass-card stat-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-calendar-day"></i>
+                        </div>
+                        <h2>12</h2>
+                        <span>Today</span>
+                    </div>
+
+                    <div class="glass-card stat-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h2>18</h2>
+                        <span>Upcoming</span>
+                    </div>
+
+                    <div class="glass-card stat-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h2>220</h2>
+                        <span>Completed</span>
+                    </div>
+
+                    <div class="glass-card stat-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-ban"></i>
+                        </div>
+                        <h2>5</h2>
+                        <span>Cancelled</span>
+                    </div>
+
+                </div>
+
+                <!-- Filters -->
+
+                <div class="glass-card filter-bar">
+
+                    <button class="filter-btn active">Today</button>
+                    <button class="filter-btn">Tomorrow</button>
+                    <button class="filter-btn">This Week</button>
+                    <button class="filter-btn">Completed</button>
+                    <button class="filter-btn">Cancelled</button>
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-search"></i>
+
+                        <input
+                            type="text"
+                            placeholder="Search appointments...">
+
+                    </div>
+
+                </div>
+
+                <!-- Appointment Table -->
+
+                <div class="glass-card">
+
+                    <div class="card-header">
+
+                        <h2>Appointment Schedule</h2>
+
+                        <a href="#">Calendar View</a>
+
+                    </div>
+
+                    <table class="appointment-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Patient</th>
+                                <th>Time</th>
+                                <th>Mode</th>
+                                <th>Duration</th>
+                                <th>Status</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>John Smith</td>
+                                <td>09:00 AM</td>
+                                <td>Video</td>
+                                <td>45 min</td>
+                                <td>
+                                    <span class="status confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        Join
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Emma Davis</td>
+                                <td>10:30 AM</td>
+                                <td>Clinic</td>
+                                <td>60 min</td>
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        Edit
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Michael Brown</td>
+                                <td>02:00 PM</td>
+                                <td>Video</td>
+                                <td>30 min</td>
+                                <td>
+                                    <span class="status completed">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        Notes
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Sophia Lee</td>
+                                <td>04:30 PM</td>
+                                <td>Clinic</td>
+                                <td>45 min</td>
+                                <td>
+                                    <span class="status confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        Join
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- PATIENTS -->
+            <!-- ========================================================= -->
+
+            <section id="patients">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h1>Patients</h1>
+
+                        <p>
+                            View and manage all your registered patients.
+                        </p>
+
+                    </div>
+
+                    <button class="primary-btn">
+
+                        <i class="fa-solid fa-user-plus"></i>
+
+                        Add Patient
+
+                    </button>
+
+                </div>
+
+                <!-- Statistics -->
+
+                <div class="stats-grid">
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <h2>148</h2>
+
+                        <span>Total Patients</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+
+                        <h2>18</h2>
+
+                        <span>New This Month</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-repeat"></i>
+                        </div>
+
+                        <h2>102</h2>
+
+                        <span>Returning</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+
+                        <h2>6</h2>
+
+                        <span>High Priority</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Search -->
+
+                <div class="glass-card search-card">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-search"></i>
+
+                        <input
+                            type="text"
+                            placeholder="Search patients by name...">
+
+                    </div>
+
+                </div>
+
+                <!-- Patient Cards -->
+
+                <div class="patient-grid">
+
+                    <div class="glass-card patient-card">
+
+                        <img src="https://i.pravatar.cc/120?img=12">
+
+                        <h3>John Smith</h3>
+
+                        <p><strong>Age:</strong> 28</p>
+
+                        <p><strong>Condition:</strong> Anxiety</p>
+
+                        <p><strong>Last Visit:</strong> May 24</p>
+
+                        <button class="primary-btn">
+                            View Profile
+                        </button>
+
+                    </div>
+
+                    <div class="glass-card patient-card">
+
+                        <img src="https://i.pravatar.cc/120?img=47">
+
+                        <h3>Emma Davis</h3>
+
+                        <p><strong>Age:</strong> 31</p>
+
+                        <p><strong>Condition:</strong> Stress</p>
+
+                        <p><strong>Last Visit:</strong> Yesterday</p>
+
+                        <button class="primary-btn">
+                            View Profile
+                        </button>
+
+                    </div>
+
+                    <div class="glass-card patient-card">
+
+                        <img src="https://i.pravatar.cc/120?img=34">
+
+                        <h3>Michael Brown</h3>
+
+                        <p><strong>Age:</strong> 42</p>
+
+                        <p><strong>Condition:</strong> Depression</p>
+
+                        <p><strong>Last Visit:</strong> Monday</p>
+
+                        <button class="primary-btn">
+                            View Profile
+                        </button>
+
+                    </div>
+
+                    <div class="glass-card patient-card">
+
+                        <img src="https://i.pravatar.cc/120?img=23">
+
+                        <h3>Sophia Lee</h3>
+
+                        <p><strong>Age:</strong> 25</p>
+
+                        <p><strong>Condition:</strong> PTSD</p>
+
+                        <p><strong>Last Visit:</strong> Last Week</p>
+
+                        <button class="primary-btn">
+                            View Profile
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Follow-up Panel -->
+
+                <div class="glass-card">
+
+                    <div class="card-header">
+
+                        <h2>Upcoming Follow-ups</h2>
+
+                        <a href="#">View All</a>
+
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <span>Tomorrow</span>
+                            <div>
+                                <h4>John Smith</h4>
+                                <p>Progress Evaluation</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>Friday</span>
+                            <div>
+                                <h4>Emma Davis</h4>
+                                <p>CBT Session</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>Monday</span>
+                            <div>
+                                <h4>David Wilson</h4>
+                                <p>Medication Review</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+                        <!-- ========================================================= -->
+            <!-- MESSAGES -->
+            <!-- ========================================================= -->
+
+            <section id="messages">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h1>Messages</h1>
+
+                        <p>Communicate securely with your patients.</p>
+
+                    </div>
+
+                    <button class="primary-btn">
+
+                        <i class="fa-solid fa-pen-to-square"></i>
+
+                        New Message
+
+                    </button>
+
+                </div>
+
+                <div class="messages-layout">
+
+                    <!-- ================= Conversations ================= -->
+
+                    <div class="glass-card conversation-list">
+
+                        <div class="chat-search">
+
+                            <i class="fa-solid fa-search"></i>
+
+                            <input
+                                type="text"
+                                placeholder="Search conversation...">
+
+                        </div>
+
+                        <div class="conversation active">
+
+                            <img src="https://i.pravatar.cc/80?img=12">
+
+                            <div>
+
+                                <h4>John Smith</h4>
+
+                                <p>Thank you for today's session.</p>
+
+                            </div>
+
+                            <span>2m</span>
+
+                        </div>
+
+                        <div class="conversation">
+
+                            <img src="https://i.pravatar.cc/80?img=47">
+
+                            <div>
+
+                                <h4>Emma Davis</h4>
+
+                                <p>Can we reschedule?</p>
+
+                            </div>
+
+                            <span>15m</span>
+
+                        </div>
+
+                        <div class="conversation">
+
+                            <img src="https://i.pravatar.cc/80?img=23">
+
+                            <div>
+
+                                <h4>Sophia Lee</h4>
+
+                                <p>Uploaded assessment.</p>
+
+                            </div>
+
+                            <span>1h</span>
+
+                        </div>
+
+                        <div class="conversation">
+
+                            <img src="https://i.pravatar.cc/80?img=32">
+
+                            <div>
+
+                                <h4>David Wilson</h4>
+
+                                <p>Looking forward to tomorrow.</p>
+
+                            </div>
+
+                            <span>Yesterday</span>
+
+                        </div>
+
+                        <div class="conversation">
+
+                            <img src="https://i.pravatar.cc/80?img=65">
+
+                            <div>
+
+                                <h4>Olivia Green</h4>
+
+                                <p>Thank you Doctor.</p>
+
+                            </div>
+
+                            <span>Yesterday</span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ================= Chat Window ================= -->
+
+                    <div class="glass-card chat-window">
+
+                        <div class="chat-header">
+
+                            <div class="chat-user">
+
+                                <img src="https://i.pravatar.cc/80?img=12">
+
+                                <div>
+
+                                    <h3>John Smith</h3>
+
+                                    <span>Online</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="chat-actions">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <i class="fa-solid fa-video"></i>
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="chat-body">
+
+                            <div class="message received">
+
+                                <p>
+                                    Hello Doctor, thank you for today's
+                                    session.
+                                </p>
+
+                                <small>09:30 AM</small>
+
+                            </div>
+
+                            <div class="message sent">
+
+                                <p>
+                                    You're welcome. Remember to practice
+                                    today's breathing exercises.
+                                </p>
+
+                                <small>09:32 AM</small>
+
+                            </div>
+
+                            <div class="message received">
+
+                                <p>
+                                    Sure! Can we schedule another session
+                                    next week?
+                                </p>
+
+                                <small>09:35 AM</small>
+
+                            </div>
+
+                            <div class="message sent">
+
+                                <p>
+                                    Absolutely. I'll send you the available
+                                    time slots shortly.
+                                </p>
+
+                                <small>09:36 AM</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="chat-input">
+
+                            <button>
+
+                                <i class="fa-solid fa-paperclip"></i>
+
+                            </button>
+
+                            <input
+                                type="text"
+                                placeholder="Type your message...">
+
+                            <button>
+
+                                <i class="fa-regular fa-face-smile"></i>
+
+                            </button>
+
+                            <button class="send-btn">
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- ANALYTICS -->
+            <!-- ========================================================= -->
+
+            <section id="analytics">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h1>Analytics</h1>
+
+                        <p>
+                            Monitor your performance and patient trends.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= Analytics Stats ================= -->
+
+                <div class="stats-grid">
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <h2>94%</h2>
+
+                        <span>Patient Satisfaction</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+                        <h2>89%</h2>
+
+                        <span>Retention Rate</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                        </div>
+
+                        <h2>320</h2>
+
+                        <span>Sessions Conducted</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-wallet"></i>
+
+                        </div>
+
+                        <h2>₹8.4L</h2>
+
+                        <span>Total Revenue</span>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= Charts ================= -->
+
+                <div class="analytics-grid">
+
+                    <div class="glass-card chart-card">
+
+                        <div class="card-header">
+
+                            <h2>Appointments Per Month</h2>
+
+                            <a href="#">Export</a>
+
+                        </div>
+
+                        <div class="chart-placeholder">
+
+                            <i class="fa-solid fa-chart-column"></i>
+
+                            <p>
+                                Chart.js Bar Chart
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="glass-card chart-card">
+
+                        <div class="card-header">
+
+                            <h2>Revenue Overview</h2>
+
+                            <a href="#">Export</a>
+
+                        </div>
+
+                        <div class="chart-placeholder">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                            <p>
+                                Line Chart Placeholder
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="glass-card chart-card">
+
+                        <div class="card-header">
+
+                            <h2>Patient Growth</h2>
+
+                        </div>
+
+                        <div class="chart-placeholder">
+
+                            <i class="fa-solid fa-users"></i>
+
+                            <p>
+                                Growth Chart
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="glass-card chart-card">
+
+                        <div class="card-header">
+
+                            <h2>Session Distribution</h2>
+
+                        </div>
+
+                        <div class="chart-placeholder">
+
+                            <i class="fa-solid fa-chart-pie"></i>
+
+                            <p>
+                                Pie Chart
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= Insights ================= -->
+
+                <div class="glass-card">
+
+                    <div class="card-header">
+
+                        <h2>Performance Insights</h2>
+
+                    </div>
+
+                    <div class="insight-grid">
+
+                        <div class="insight">
+
+                            <i class="fa-solid fa-calendar-week"></i>
+
+                            <div>
+
+                                <h4>Busiest Day</h4>
+
+                                <p>Tuesday</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="insight">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            <div>
+
+                                <h4>Average Session</h4>
+
+                                <p>48 Minutes</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="insight">
+
+                            <i class="fa-solid fa-ban"></i>
+
+                            <div>
+
+                                <h4>Cancellation Rate</h4>
+
+                                <p>6%</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="insight">
+
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+
+                            <div>
+
+                                <h4>Monthly Growth</h4>
+
+                                <p>+14%</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+                        <!-- ========================================================= -->
+            <!-- REPORTS -->
+            <!-- ========================================================= -->
+
+            <section id="reports">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h1>Reports</h1>
+
+                        <p>Create, manage and export patient reports.</p>
+
+                    </div>
+
+                    <button class="primary-btn">
+
+                        <i class="fa-solid fa-file-circle-plus"></i>
+
+                        New Report
+
+                    </button>
+
+                </div>
+
+                <!-- Search & Actions -->
+
+                <div class="glass-card filter-bar">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-search"></i>
+
+                        <input type="text"
+                            placeholder="Search reports...">
+
+                    </div>
+
+                    <div class="action-buttons">
+
+                        <button class="secondary-btn">
+                            Export All
+                        </button>
+
+                        <button class="secondary-btn">
+                            Upload PDF
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Reports Table -->
+
+                <div class="glass-card">
+
+                    <div class="card-header">
+
+                        <h2>Patient Reports</h2>
+
+                        <a href="#">View Archive</a>
+
+                    </div>
+
+                    <table class="appointment-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Patient</th>
+                                <th>Date</th>
+                                <th>Diagnosis</th>
+                                <th>Status</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>John Smith</td>
+
+                                <td>15 Jun 2026</td>
+
+                                <td>Anxiety Disorder</td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        Download
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Emma Davis</td>
+
+                                <td>10 Jun 2026</td>
+
+                                <td>Stress Management</td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        Draft
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        Edit
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Michael Brown</td>
+
+                                <td>07 Jun 2026</td>
+
+                                <td>Depression</td>
+
+                                <td>
+
+                                    <span class="status confirmed">
+                                        Approved
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        Download
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- Draft Reports -->
+
+                <div class="dashboard-grid">
+
+                    <div class="glass-card">
+
+                        <h3>Draft Report</h3>
+
+                        <p><strong>Patient:</strong> Sophia Lee</p>
+
+                        <p>Awaiting diagnosis review.</p>
+
+                        <button class="primary-btn">
+                            Continue Writing
+                        </button>
+
+                    </div>
+
+                    <div class="glass-card">
+
+                        <h3>Recently Exported</h3>
+
+                        <p>John Smith Report.pdf</p>
+
+                        <small>Yesterday • 2:30 PM</small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- VERIFICATION -->
+            <!-- ========================================================= -->
+
+            <section id="verification">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h1>Verification</h1>
+
+                        <p>Maintain your professional credentials.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Progress -->
+
+                <div class="glass-card">
+
+                    <div class="card-header">
+
+                        <h2>Verification Status</h2>
+
+                    </div>
+
+                    <div class="verification-grid">
+
+                        <div class="verify-card success">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <h4>Identity</h4>
+
+                            <p>Verified</p>
+
+                        </div>
+
+                        <div class="verify-card success">
+
+                            <i class="fa-solid fa-certificate"></i>
+
+                            <h4>License</h4>
+
+                            <p>Verified</p>
+
+                        </div>
+
+                        <div class="verify-card success">
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                            <h4>Degree</h4>
+
+                            <p>Verified</p>
+
+                        </div>
+
+                        <div class="verify-card pending">
+
+                            <i class="fa-solid fa-hourglass-half"></i>
+
+                            <h4>Certificates</h4>
+
+                            <p>Pending Review</p>
+
+                        </div>
+
+                        <div class="verify-card success">
+
+                            <i class="fa-solid fa-shield"></i>
+
+                            <h4>Background Check</h4>
+
+                            <p>Completed</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Upload Documents -->
+
+                <div class="dashboard-grid">
+
+                    <div class="glass-card upload-card">
+
+                        <i class="fa-solid fa-file-arrow-up"></i>
+
+                        <h3>Professional License</h3>
+
+                        <button class="primary-btn">
+                            Upload
+                        </button>
+
+                    </div>
+
+                    <div class="glass-card upload-card">
+
+                        <i class="fa-solid fa-file-arrow-up"></i>
+
+                        <h3>Degree Certificate</h3>
+
+                        <button class="primary-btn">
+                            Upload
+                        </button>
+
+                    </div>
+
+                    <div class="glass-card upload-card">
+
+                        <i class="fa-solid fa-file-arrow-up"></i>
+
+                        <h3>Government ID</h3>
+
+                        <button class="primary-btn">
+                            Upload
+                        </button>
+
+                    </div>
+
+                    <div class="glass-card upload-card">
+
+                        <i class="fa-solid fa-file-arrow-up"></i>
+
+                        <h3>Additional Certificates</h3>
+
+                        <button class="primary-btn">
+                            Upload
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Timeline -->
+
+                <div class="glass-card">
+
+                    <div class="card-header">
+
+                        <h2>Verification Timeline</h2>
+
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+
+                            <span>May 20</span>
+
+                            <div>
+
+                                <h4>Documents Submitted</h4>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+
+                            <span>May 23</span>
+
+                            <div>
+
+                                <h4>Background Verification</h4>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+
+                            <span>May 26</span>
+
+                            <div>
+
+                                <h4>Professional Account Approved</h4>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- EARNINGS -->
+            <!-- ========================================================= -->
+
+            <section id="earnings">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h1>Earnings</h1>
+
+                        <p>Track income and payment history.</p>
+
+                    </div>
+
+                    <button class="primary-btn">
+
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+
+                        Withdraw Funds
+
+                    </button>
+
+                </div>
+
+                <!-- Summary Cards -->
+
+                <div class="stats-grid">
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-wallet"></i>
+
+                        </div>
+
+                        <h2>₹82,500</h2>
+
+                        <span>This Month</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-hourglass-half"></i>
+
+                        </div>
+
+                        <h2>₹8,300</h2>
+
+                        <span>Pending</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                        <h2>₹74,200</h2>
+
+                        <span>Paid</span>
+
+                    </div>
+
+                    <div class="glass-card stat-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                        </div>
+
+                        <h2>₹1,500</h2>
+
+                        <span>Avg Session Fee</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Revenue Chart -->
+
+                <div class="glass-card chart-card">
+
+                    <div class="card-header">
+
+                        <h2>Monthly Revenue</h2>
+
+                        <a href="#">Download</a>
+
+                    </div>
+
+                    <div class="chart-placeholder">
+
+                        <i class="fa-solid fa-chart-area"></i>
+
+                        <p>Revenue Chart Placeholder</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Transactions -->
+
+                <div class="glass-card">
+
+                    <div class="card-header">
+
+                        <h2>Recent Transactions</h2>
+
+                    </div>
+
+                    <table class="appointment-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Patient</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>John Smith</td>
+
+                                <td>₹1,500</td>
+
+                                <td>15 Jun</td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Paid
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Emma Davis</td>
+
+                                <td>₹1,200</td>
+
+                                <td>13 Jun</td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Sophia Lee</td>
+
+                                <td>₹1,800</td>
+
+                                <td>11 Jun</td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Paid
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+                        <!-- ========================================================= -->
+            <!-- SETTINGS -->
+            <!-- ========================================================= -->
+
+            <section id="settings">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h1>Settings</h1>
+
+                        <p>
+                            Manage your profile, preferences and security.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PROFILE SETTINGS ================= -->
+
+                <div class="glass-card settings-card">
+
+                    <div class="card-header">
+
+                        <h2>
+                            <i class="fa-solid fa-user"></i>
+                            Profile Information
+                        </h2>
+
+                    </div>
+
+
+                    <div class="profile-settings">
+
+
+                        <div class="profile-image">
+
+                            <img src="https://i.pravatar.cc/150?img=32"
+                                alt="Doctor Profile">
+
+                            <button>
+                                <i class="fa-solid fa-camera"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="input-group">
+
+                                <label>
+                                    Full Name
+                                </label>
+
+                                <input 
+                                    type="text"
+                                    value="Dr. Sarah Wilson">
+
+                            </div>
+
+
+                            <div class="input-group">
+
+                                <label>
+                                    Email Address
+                                </label>
+
+                                <input 
+                                    type="email"
+                                    value="sarah@psyconnect.com">
+
+                            </div>
+
+
+                            <div class="input-group">
+
+                                <label>
+                                    Phone Number
+                                </label>
+
+                                <input 
+                                    type="text"
+                                    value="+91 9876543210">
+
+                            </div>
+
+
+                            <div class="input-group">
+
+                                <label>
+                                    Location
+                                </label>
+
+                                <input 
+                                    type="text"
+                                    value="Ahmedabad, India">
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="input-group full">
+
+                        <label>
+                            Professional Bio
+                        </label>
+
+                        <textarea>
+
+Clinical Psychologist specializing in anxiety,
+stress management and behavioral therapy.
+
+                        </textarea>
+
+                    </div>
+
+
+                    <button class="primary-btn">
+
+                        Save Changes
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- ================= PROFESSIONAL DETAILS ================= -->
+
+
+                <div class="glass-card settings-card">
+
+
+                    <div class="card-header">
+
+
+                        <h2>
+
+                            <i class="fa-solid fa-user-doctor"></i>
+
+                            Professional Details
+
+                        </h2>
+
+
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Specialization
+                            </label>
+
+                            <input 
+                                type="text"
+                                value="Clinical Psychology">
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Experience
+                            </label>
+
+                            <input 
+                                type="text"
+                                value="8 Years">
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label>
+                                License Number
+                            </label>
+
+                            <input 
+                                type="text"
+                                value="PSY-458921">
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Consultation Fee
+                            </label>
+
+                            <input 
+                                type="text"
+                                value="₹1500">
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+                <!-- ================= AVAILABILITY ================= -->
+
+
+                <div class="glass-card settings-card">
+
+
+                    <div class="card-header">
+
+                        <h2>
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            Availability
+
+                        </h2>
+
+
+                    </div>
+
+
+                    <div class="availability-grid">
+
+
+                        <div class="availability-day active">
+
+                            <h4>
+                                Monday
+                            </h4>
+
+                            <p>
+                                09:00 AM - 05:00 PM
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="availability-day active">
+
+                            <h4>
+                                Tuesday
+                            </h4>
+
+                            <p>
+                                09:00 AM - 05:00 PM
+                            </p>
+
+                        </div>
+
+
+
+
+                        <div class="availability-day">
+
+                            <h4>
+                                Wednesday
+                            </h4>
+
+                            <p>
+                                Not Available
+                            </p>
+
+                        </div>
+
+
+
+
+                        <div class="availability-day active">
+
+                            <h4>
+                                Thursday
+                            </h4>
+
+                            <p>
+                                10:00 AM - 06:00 PM
+                            </p>
+
+                        </div>
+
+
+
+
+                        <div class="availability-day active">
+
+                            <h4>
+                                Friday
+                            </h4>
+
+                            <p>
+                                09:00 AM - 04:00 PM
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <!-- ================= NOTIFICATIONS ================= -->
+
+
+                <div class="glass-card settings-card">
+
+
+                    <div class="card-header">
+
+                        <h2>
+
+                            <i class="fa-solid fa-bell"></i>
+
+                            Notifications
+
+                        </h2>
+
+
+                    </div>
+
+
+
+                    <div class="toggle-list">
+
+
+
+                        <div class="toggle-item">
+
+                            <div>
+
+                                <h4>
+                                    Appointment Reminders
+                                </h4>
+
+                                <p>
+                                    Receive upcoming session alerts
+                                </p>
+
+                            </div>
+
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span></span>
+
+                            </label>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="toggle-item">
+
+
+                            <div>
+
+                                <h4>
+                                    New Messages
+                                </h4>
+
+                                <p>
+                                    Get notified about patient messages
+                                </p>
+
+                            </div>
+
+
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span></span>
+
+                            </label>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="toggle-item">
+
+
+                            <div>
+
+                                <h4>
+                                    Payment Updates
+                                </h4>
+
+                                <p>
+                                    Receive earning notifications
+                                </p>
+
+                            </div>
+
+
+
+                            <label class="switch">
+
+                                <input type="checkbox">
+
+                                <span></span>
+
+                            </label>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <!-- ================= SECURITY ================= -->
+
+
+                <div class="glass-card settings-card">
+
+
+                    <div class="card-header">
+
+
+                        <h2>
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            Security
+
+                        </h2>
+
+
+                    </div>
+
+
+
+                    <div class="security-options">
+
+
+                        <button class="security-btn">
+
+                            <i class="fa-solid fa-key"></i>
+
+                            Change Password
+
+                        </button>
+
+
+
+
+                        <button class="security-btn">
+
+                            <i class="fa-solid fa-mobile-screen"></i>
+
+                            Enable Two-Factor Authentication
+
+                        </button>
+
+
+
+
+                        <button class="security-btn">
+
+                            <i class="fa-solid fa-desktop"></i>
+
+                            Manage Active Sessions
+
+                        </button>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <!-- ================= DANGER ZONE ================= -->
+
+
+                <div class="glass-card danger-card">
+
+
+                    <div class="card-header">
+
+
+                        <h2>
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                            Danger Zone
+
+                        </h2>
+
+
+                    </div>
+
+
+
+                    <p>
+
+                        Deleting your account will permanently remove
+                        your profile, reports and appointment history.
+
+                    </p>
+
+
+
+                    <button class="delete-btn">
+
+                        Delete Account
+
+                    </button>
+
+
+                </div>
+
+
+
+            </section>
+
+
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="../JS/psycologistDashboard.js"></script>
+
+
+</body>
+
+</html>
