@@ -168,7 +168,7 @@
 ========================== -->
 
 
-<form class="registration-form">
+<form id="psychologistForm" class="registration-form">
 
 
 
@@ -190,9 +190,7 @@
 Full Name
 </label>
 
-<input type="text"
-placeholder="Enter your full name"
-required>
+<input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
 
 </div>
 
@@ -204,8 +202,7 @@ required>
 Date of Birth
 </label>
 
-<input type="date"
-required>
+<input type="date" id="dob" name="dob" required>
 
 </div>
 
@@ -218,7 +215,7 @@ Gender
 </label>
 
 
-<select required>
+<select id="gender" name="gender" required></select>
 
 <option value="">
 Select Gender
@@ -250,9 +247,7 @@ Prefer not to say
 Phone Number
 </label>
 
-<input type="tel"
-placeholder="Enter phone number"
-required>
+<input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
 
 </div>
 
@@ -265,8 +260,7 @@ required>
 Email
 </label>
 
-<input type="email"
-placeholder="Enter email address">
+<input type="email" id="email" name="email" placeholder="Enter email address" required>
 
 </div>
 
@@ -279,8 +273,7 @@ placeholder="Enter email address">
 City
 </label>
 
-<input type="text"
-placeholder="Your city">
+<input type="text" id="city" name="city" placeholder="Your city" required>
 
 </div>
 
@@ -297,9 +290,7 @@ Professional Bio
 </label>
 
 
-<textarea rows="4"
-placeholder="Write a short introduction about yourself and your practice">
-</textarea>
+<textarea id="professionalBio" name="professionalBio" rows="4"></textarea>
 
 
 </div>
@@ -329,7 +320,7 @@ Highest Qualification
 </label>
 
 
-<select>
+<select id="qualification" name="qualification"></select>
 
 
 <option>
@@ -372,8 +363,7 @@ University / Institution
 </label>
 
 
-<input type="text"
-placeholder="Institution name">
+<input type="text" id="institution" name="institution">
 
 
 </div>
@@ -388,8 +378,7 @@ Graduation Year
 </label>
 
 
-<input type="number"
-placeholder="Year">
+<input type="number" id="graduationYear" name="graduationYear">
 
 
 </div>
@@ -403,8 +392,7 @@ Specialization
 </label>
 
 
-<input type="text"
-placeholder="Clinical, Counselling, Child Psychology...">
+<input type="text" id="specialization" name="specialization">
 
 </div>
 
@@ -439,6 +427,7 @@ License Number
 
 
 <input type="text"
+id="licenseNumber"
 placeholder="Registration number"
 required>
 
@@ -457,6 +446,7 @@ Issuing Authority
 
 
 <input type="text"
+id="issuingAuthority"
 placeholder="Authority name">
 
 
@@ -474,6 +464,7 @@ License Type
 
 
 <input type="text"
+id="licenseType"
 placeholder="RCI / State License">
 
 
@@ -490,7 +481,8 @@ License Expiry Date
 </label>
 
 
-<input type="date">
+<input type="date"
+id="licenseExpiryDate">
 
 
 </div>
@@ -525,7 +517,7 @@ Years of Experience
 </label>
 
 
-<select>
+<select id="experience">
 
 
 <option>
@@ -576,6 +568,7 @@ Previous Workplace
 
 
 <input type="text"
+id="previousWorkplace"
 placeholder="Clinic / Hospital / Organization">
 
 
@@ -595,7 +588,9 @@ Areas of Expertise
 </label>
 
 
-<textarea rows="3"
+<textarea 
+id="expertise"
+rows="3"
 placeholder="Example: Anxiety, Depression, CBT, Relationship Therapy">
 </textarea>
 

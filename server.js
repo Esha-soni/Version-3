@@ -8,6 +8,7 @@ const connectDB = require("./Backend/config/db");
 
 const authRoutes = require("./Backend/routes/AuthRoutes");
 const patientRoutes = require("./Backend/routes/PatientRoutes");
+const psychologistRoutes = require("./Backend/routes/PsycologistsRoutes");
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(express.json());
 // Routes
 app.use("/api", authRoutes);
 app.use("/api", patientRoutes);
+app.use("/api", psychologistRoutes);
 
 // Test Route
 app.get("/", (req, res) => {

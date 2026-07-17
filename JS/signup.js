@@ -48,7 +48,7 @@ signupForm.addEventListener("submit", async (e) => {
         if (response.ok) {
 
             // Registration form માટે data save
-            localStorage.setItem("user", JSON.stringify(data.user));
+            localStorage.setItem("user", JSON.stringify
             ({
                 fullName,
                 email,
@@ -57,11 +57,11 @@ signupForm.addEventListener("submit", async (e) => {
 
             if (role.value === "patient") {
 
-                window.location.href = "../Registration Form/Patient Registration.html";
+                window.location.href = "../RegistrationForms/Patientnpm Registration.html";
 
             } else {
 
-                window.location.href = "../Registration Form/Psychologist Registration.html";
+                window.location.href = "../RegistrationForms/psycologistRegistration.html";
 
             }
 

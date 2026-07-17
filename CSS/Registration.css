@@ -35,6 +35,7 @@
 ========================== */
 
 .orb{
+    position-events:none;
 
     position:absolute;
 
