@@ -1,0 +1,302 @@
+<main class="main-content">
+
+    <!-- ================= Dashboard ================= -->
+
+    <section class="page active" id="dashboard">
+
+        <header class="dashboard-header">
+
+            <div>
+                <h1>Good Morning, Rahul 👋</h1>
+                <p>Every small step counts. Take a moment to check in with yourself today.</p>
+            </div>
+
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Profile">
+            </div>
+
+        </header>
+
+        <!-- Overview -->
+
+        <section class="overview-grid">
+
+            <div class="glass-card">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h3>Next Appointment</h3>
+                <p>Tomorrow • 5:00 PM</p>
+            </div>
+
+            <div class="glass-card">
+                <i class="fa-solid fa-face-smile"></i>
+                <h3>Today's Mood</h3>
+                <p>😊 Feeling Good</p>
+            </div>
+
+            <div class="glass-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Progress</h3>
+                <p>68% Goal Achieved</p>
+            </div>
+
+            <div class="glass-card">
+                <i class="fa-solid fa-bullseye"></i>
+                <h3>Current Goal</h3>
+                <p>Reduce Anxiety</p>
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- ================= Appointments ================= -->
+
+    <section class="page" id="appointments">
+
+        <h2>Appointments</h2>
+
+        <div class="dashboard-card">
+
+            <h3>Upcoming Session</h3>
+
+            <p><strong>Dr. Sarah Sharma</strong></p>
+            <p>15 July 2026 • 5:00 PM</p>
+
+            <button class="primary-btn">Join Session</button>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h3>Past Sessions</h3>
+
+            <ul class="activity-list">
+                <li>10 July 2026</li>
+                <li>03 July 2026</li>
+                <li>26 June 2026</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Messages ================= -->
+
+    <section class="page" id="messages">
+
+        <h2>Messages</h2>
+
+        <div class="dashboard-card">
+
+            <p>No unread messages.</p>
+
+            <button class="primary-btn">Open Chat</button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Journal ================= -->
+
+    <section class="page" id="journal">
+
+        <h2>Journal</h2>
+
+        <div class="dashboard-card">
+
+            <textarea rows="10" placeholder="Write about your day..."></textarea>
+
+            <br><br>
+
+            <button class="primary-btn">Save Entry</button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Mood Tracker ================= -->
+
+    <section class="page" id="mood">
+
+        <h2>Mood Tracker</h2>
+
+        <div class="dashboard-card">
+
+            <div class="action-grid">
+
+                <div class="action-box">😊 Happy</div>
+                <div class="action-box">🙂 Calm</div>
+                <div class="action-box">😐 Neutral</div>
+                <div class="action-box">😔 Sad</div>
+                <div class="action-box">😡 Angry</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Therapy Goals ================= -->
+
+    <section class="page" id="goals">
+
+        <h2>Therapy Goals</h2>
+
+        <div class="dashboard-card">
+
+            <ul class="activity-list">
+                <li>✔ Reduce Anxiety</li>
+                <li>✔ Improve Sleep</li>
+                <li>✔ Build Confidence</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Progress ================= -->
+
+    <section class="page" id="progress">
+
+        <h2>Progress</h2>
+
+        <div class="dashboard-card">
+
+            <h3>Overall Progress</h3>
+
+            <p>68% Goal Achieved</p>
+
+            <progress value="68" max="100"></progress>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Find Psychologist ================= -->
+
+    <section class="page" id="psychologist">
+
+        <h2>Find Psychologist</h2>
+
+        <div class="dashboard-card">
+
+            <input type="text" placeholder="Search therapist">
+
+            <br><br>
+
+            <button class="primary-btn">Search</button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Favorites ================= -->
+
+    <section class="page" id="favorites">
+
+        <h2>Favorites</h2>
+
+        <div class="dashboard-card">
+
+            <ul class="activity-list">
+                <li>Dr. Sarah Sharma</li>
+                <li>Dr. Amit Verma</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Payments ================= -->
+
+    <section class="page" id="payments">
+
+        <h2>Payments</h2>
+
+        <div class="dashboard-card">
+
+            <p>Last Payment</p>
+
+            <h3>₹1,200</h3>
+
+            <button class="primary-btn">View History</button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Settings ================= -->
+
+    <section class="page" id="settings">
+
+        <h2>Settings</h2>
+
+        <div class="dashboard-card">
+
+            <button class="primary-btn">Edit Profile</button>
+
+            <br><br>
+
+            <button class="primary-btn">Change Password</button>
+
+        </div>
+
+    </section>
+
+</main>
+<script>
+
+const pages = document.querySelectorAll(".page");
+const menuItems = document.querySelectorAll(".sidebar-menu li");
+
+menuItems.forEach(item => {
+
+    item.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const pageId = this.querySelector("a")
+            .innerText
+            .trim()
+            .toLowerCase()
+            .replaceAll(" ", "-");
+
+        const pageMap = {
+
+            "dashboard": "dashboard",
+            "appointments": "appointments",
+            "messages": "messages",
+            "journal": "journal",
+            "mood-tracker": "mood",
+            "therapy-goals": "goals",
+            "progress": "progress",
+            "find-psychologist": "psychologist",
+            "favorites": "favorites",
+            "payments": "payments",
+            "settings": "settings"
+
+        };
+
+
+        pages.forEach(page=>{
+            page.classList.remove("active");
+        });
+
+
+        document
+        .getElementById(pageMap[pageId])
+        .classList.add("active");
+
+
+        menuItems.forEach(menu=>{
+            menu.classList.remove("active");
+        });
+
+
+        this.classList.add("active");
+
+    });
+
+});
+
+</script>

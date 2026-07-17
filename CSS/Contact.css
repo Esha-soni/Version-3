@@ -1,0 +1,923 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.body{
+    min-height:100vh;
+    overflow-x:hidden;
+    color:#fff;
+
+    background:linear-gradient(
+        120deg,
+        #5BC0EB 0%,
+        #2FB8AC 35%,
+        #A8E6CF 60%,
+        #FFD166 85%,
+        #FF9F7F 100%
+    );
+
+    position:relative
+}
+
+/* ==========================================
+   FLOATING ORBS
+========================================== */
+
+.orb{
+
+    position:absolute;
+    border-radius:50%;
+    filter:blur(8px);
+    opacity:.35;
+    animation:float 12s ease-in-out infinite;
+    z-index:-1;
+
+}
+
+.orb1{
+
+    width:320px;
+    height:320px;
+
+    background:#ffffff;
+
+    top:-80px;
+    left:-120px;
+
+}
+
+.orb2{
+
+    width:250px;
+    height:250px;
+
+    background:#A8E6CF;
+
+    right:-60px;
+    top:160px;
+
+    animation-delay:2s;
+
+}
+
+.orb3{
+
+    width:300px;
+    height:300px;
+
+    background:#FFD166;
+
+    bottom:-100px;
+    left:40%;
+
+    animation-delay:4s;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-35px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.18);
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:24px;
+    font-weight:700;
+
+}
+
+.logo i{
+
+    color:#fff;
+    font-size:30px;
+
+}
+
+.logo span{
+
+    letter-spacing:.5px;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:30px;
+
+    list-style:none;
+
+}
+
+.nav-links li a{
+
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.nav-links li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+    height:2px;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+.nav-links li a:hover::after{
+
+    width:100%;
+
+}
+
+.nav-links li a:hover{
+
+    color:#fff;
+
+}
+
+.nav-links .active{
+
+    font-weight:700;
+
+}
+
+.nav-buttons{
+
+    display:flex;
+    gap:15px;
+
+}
+
+.btn-outline{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.4);
+
+    padding:10px 24px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn-outline:hover{
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.btn-primary{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    padding:10px 24px;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#5BC0EB,#2FB8AC);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+    transition:.35s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-section{
+
+    width:100%;
+
+    padding:70px 8%;
+
+}
+
+.contact-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.contact-header h1{
+
+    font-size:48px;
+
+    font-weight:700;
+    color: #07262e;
+    margin-bottom:18px;
+
+}
+
+.contact-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.88);
+
+}
+
+/* ==========================================
+   CONTACT GRID
+========================================== */
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.glass-card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.18),
+
+        inset 0 1px 0 rgba(255,255,255,.15);
+
+    transition:.4s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+        0 25px 50px rgba(0,0,0,.22);
+
+}
+
+/* ==========================================
+   CARD TITLES
+========================================== */
+
+.contact-form h2,
+.contact-info h2{
+
+    font-size:28px;
+
+    margin-bottom:30px;
+
+    font-weight:700;
+    color: #07262e;
+}
+
+.contact-info{
+
+    position:sticky;
+
+    top:110px;
+
+}
+/* ==========================================
+   FORM
+========================================== */
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:500;
+    color:rgba(18, 31, 41, 0.92);
+}
+
+.input-group input,
+.input-group textarea{
+
+    width:100%;
+    padding:15px 18px;
+
+    border:none;
+    outline:none;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    color:#192519;
+    font-size:15px;
+
+    backdrop-filter:blur(15px);
+
+    transition:.35s;
+
+}
+
+.input-group textarea{
+
+    resize:none;
+    min-height:160px;
+
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+
+    color:rgba(43, 32, 32, 0.55);
+
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+
+    border:1px solid rgba(255,255,255,.5);
+
+    background:rgba(255,255,255,.18);
+
+    box-shadow:0 0 0 4px rgba(255,255,255,.08);
+
+}
+
+/* ==========================================
+   SEND BUTTON
+========================================== */
+
+.gradient-btn{
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:rgba(0, 0, 0, 0.849);
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.20);
+
+}
+
+.gradient-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 22px 40px rgba(0,0,0,.25);
+
+}
+
+.gradient-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================================
+   CONTACT INFO
+========================================== */
+
+.info-item{
+
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+
+    margin-bottom:28px;
+
+}
+
+.info-item i{
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    color:#2b2733;
+
+    font-size:20px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.info-item h4{
+
+    margin-bottom:5px;
+    font-size:17px;
+
+}
+
+.info-item p{
+
+    color:rgba(53, 26, 26, 0.82);
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.social-links{
+
+    display:flex;
+    gap:15px;
+
+    margin:35px 0;
+
+}
+
+.social-links a{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#07262e;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.35s;
+
+}
+
+.social-links a:hover{
+
+    background:#fff;
+
+    color:#2FB8AC;
+
+    transform:translateY(-5px) scale(1.08);
+
+    box-shadow:0 15px 25px rgba(0,0,0,.18);
+
+}
+
+/* ==========================================
+   CONTACT NOTE
+========================================== */
+
+.contact-note{
+
+    margin-top:30px;
+
+    padding:18px;
+
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+
+    border-radius:18px;
+
+    background:rgba(245, 241, 241, 0.767);
+
+    border:1px solid rgba(167, 25, 25, 0.658);
+
+}
+
+.contact-note i{
+
+    font-size:24px;
+    color:#ff7866;
+
+}
+
+.contact-note p{
+
+    color:rgba(46, 4, 20, 0.88);
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   SCROLL ANIMATION
+========================================== */
+
+.contact-header,
+.contact-form,
+.contact-info{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   CUSTOM SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ffffff15;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ffffff55;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ffffff88;
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:992px){
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-info{
+
+        position:relative;
+        top:0;
+
+    }
+
+    .contact-header h1{
+
+        font-size:40px;
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE NAVBAR
+========================================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        gap:20px;
+
+        padding:25px;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+    .nav-buttons{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .contact-section{
+
+        padding:50px 20px;
+
+    }
+
+    .glass-card{
+
+        padding:28px;
+
+    }
+
+    .contact-header h1{
+
+        font-size:34px;
+
+    }
+
+    .contact-header p{
+
+        font-size:15px;
+
+    }
+
+}
+
+/* ==========================================
+   SMALL DEVICES
+========================================== */
+
+@media(max-width:480px){
+
+    .contact-header h1{
+
+        font-size:28px;
+
+    }
+
+    .contact-form h2,
+    .contact-info h2{
+
+        font-size:24px;
+
+    }
+
+    .gradient-btn{
+
+        font-size:15px;
+
+        padding:15px;
+
+    }
+
+    .info-item{
+
+        gap:14px;
+
+    }
+
+    .info-item i{
+
+        width:45px;
+        height:45px;
+
+        font-size:18px;
+
+    }
+
+    .social-links{
+
+        justify-content:center;
+        flex-wrap:wrap;
+
+    }
+
+}
+
+/* ==========================================
+   GLASS SHINE EFFECT
+========================================== */
+
+.glass-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.glass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:70%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    transition:1s;
+
+}
+
+.glass-card:hover::before{
+
+    left:140%;
+
+}
+
+/* ==========================================
+   ICON ANIMATION
+========================================== */
+
+.info-item:hover i{
+
+    transform:rotate(10deg) scale(1.1);
+
+    transition:.35s;
+
+}
+
+/* ==========================================
+   INPUT HOVER
+========================================== */
+
+.input-group input:hover,
+.input-group textarea:hover{
+
+    background:rgba(255,255,255,.16);
+
+}
+
+/* ==========================================
+   END
+========================================== */

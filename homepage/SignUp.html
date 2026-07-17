@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | PsyConnect</title>
+
+    <link rel="stylesheet" href="../CSS/login/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+
+    <div class="logo">
+        <h2>PsyConnect</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+    </div>
+
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+    <section class="login-section">
+
+        <!-- LOGO -->
+        <div class="page-logo">
+            <img src="logo.png" alt="PsyConnect Logo">
+        </div>
+
+        <!-- HEADING -->
+        <div class="page-heading">
+            <h1>Create Account</h1>
+            <p>
+                Start your mental wellness journey with PsyConnect.
+            </p>
+        </div>
+
+        <!-- MESSAGE BOX -->
+        <div class="message-box"></div>
+
+        <!-- ================= SIGNUP CARD ================= -->
+        <div class="login-card">
+
+            <form id="signupForm">
+
+                <!-- FULL NAME -->
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input-group password-field">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Create password" required>
+                    <button type="button" class="toggle-password">👁</button>
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="input-group password-field">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                    <button type="button" class="toggle-password">👁</button>
+                </div>
+
+              <!-- ROLE SELECTION -->
+             <div class="input-group">
+
+                  <label>I am a</label>
+
+              <div class="role-select">
+
+                     <label class="role-card">
+                      <input type="radio" name="role" value="patient" required>
+                     <span>
+                            🧑‍⚕️ Patient
+                     </span>
+                  </label>
+
+                <label class="role-card">
+                   <input type="radio" name="role" value="psychologist">
+                     <span>
+                       👨‍⚕️ Psychologist
+                     </span>
+                 </label>
+
+              </div>
+
+             </div>
+                <!-- TERMS -->
+                <div class="options">
+                    <label>
+                        <input type="checkbox" required>
+                        I agree to Terms & Privacy Policy
+                    </label>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="login-btn">
+                    Create Account
+                </button>
+
+                <!-- DIVIDER -->
+                <hr>
+
+                <!-- LOGIN LINK -->
+                <div class="signup-link">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- SECURITY NOTE -->
+        <div class="security-note">
+            <strong>🔒 Privacy First:</strong>
+            Your personal data is encrypted and only shared with your psychologist when you allow it.
+        </div>
+
+    </section>
+
+</main>
+
+<!-- ================= LOADING SCREEN ================= -->
+<div class="loading-screen">
+
+    <img src="logo.png" alt="Loading">
+
+    <h2>Creating your account</h2>
+
+    <p class="loading-dots">Please wait</p>
+
+</div>
+<script src="../JS/signup.js"></script>
+
+</body>
+</html>
