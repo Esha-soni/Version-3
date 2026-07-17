@@ -1,4 +1,5 @@
 console.log("signup.js loaded");
+
 const signupForm = document.getElementById("signupForm");
 
 signupForm.addEventListener("submit", async (e) => {
@@ -22,17 +23,22 @@ signupForm.addEventListener("submit", async (e) => {
     }
 
     try {
+
         const response = await fetch("http://localhost:5000/api/signup", {
+
             method: "POST",
+
             headers: {
                 "Content-Type": "application/json"
             },
+
             body: JSON.stringify({
                 fullName,
                 email,
                 password,
                 role: role.value
             })
+
         });
 
         const data = await response.json();
@@ -40,11 +46,32 @@ signupForm.addEventListener("submit", async (e) => {
         alert(data.message);
 
         if (response.ok) {
-            window.location.href = "Login.html";
+
+            // Registration form માટે data save
+            localStorage.setItem("user", JSON.stringify(data.user));
+            ({
+                fullName,
+                email,
+                role: role.value
+            }));
+
+            if (role.value === "patient") {
+
+                window.location.href = "../Registration Form/Patient Registration.html";
+
+            } else {
+
+                window.location.href = "../Registration Form/Psychologist Registration.html";
+
+            }
+
         }
 
     } catch (error) {
+
         console.error(error);
         alert("Unable to connect to server.");
+
     }
+
 });
